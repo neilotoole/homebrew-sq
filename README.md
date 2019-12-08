@@ -1,0 +1,2 @@
+# homebrew-sq
+Homebrew tap
