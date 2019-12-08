@@ -12,7 +12,7 @@ class Sq < Formula
   end
 
   def install
-    bin.install "program"
+    bin.install "sq"
   end
 
   test do
