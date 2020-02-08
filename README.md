@@ -1,4 +1,4 @@
-# neilotoole qq
+# neilotoole/sq
 
 ## How do I install these formulae?
 `brew install neilotoole/sq/<formula>`
