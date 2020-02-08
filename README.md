@@ -1,9 +1,11 @@
 # neilotoole/sq
 
-## How do I install these formulae?
-`brew install neilotoole/sq/<formula>`
 
-Or `brew tap neilotoole/sq` and then `brew install <formula>`.
+
+## How do I install these formulae?
+`brew install neilotoole/sq/sq`
+
+Or `brew tap neilotoole/sq` and then `brew install sq`.
 
 Or install via URL (which will not receive updates):
 
