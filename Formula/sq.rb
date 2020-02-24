@@ -7,7 +7,7 @@ class Sq < Formula
 
   if OS.mac?
     url "http://sq.io.s3.amazonaws.com/release/sq-0.5.1-macos.tar.gz"
-    sha256 "ebb1d8a8237ee126e09d50025f2327aaff160e920830fef94e41bb244dac6de7"
+    sha256 "2909ce2898ff6de4f8e4b946477fb3c9ab90a3decc2b4c902716118fb7caa5bc"
   elsif OS.linux?
   end
 
