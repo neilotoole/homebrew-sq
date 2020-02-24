@@ -6,8 +6,8 @@ class Sq < Formula
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/neilotoole/sq/releases/download/v0.5.1/sq-0.5.1-macos.tar.gz"
-    sha256 "fbf3973a7b97b95a99a3331d7604e6983564c313e37ca9ea206e0db95891c678"
+    url "http://sq.io.s3.amazonaws.com/release/sq-0.5.1-macos.tar.gz"
+    sha256 "ebb1d8a8237ee126e09d50025f2327aaff160e920830fef94e41bb244dac6de7"
   elsif OS.linux?
   end
 
