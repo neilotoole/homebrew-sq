@@ -6,13 +6,18 @@ class Sq < Formula
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/neilotoole/sq-preview/releases/download/v0.5.4/sq-preview-0.5.4-macos.tar.gz"
-    sha256 "87444364a2073d88c0b567d4d005bb588c107146951e531e7db64f7b0e66f521"
+    url "https://github.com/neilotoole/sq-preview/releases/download/v0.5.4/sq-0.5.4-macos.tar.gz"
+    sha256 "50db4d12971e7740ed3ba534eb0b18b95c83e5ab7da780a8063c51107eac1b7e"
   elsif OS.linux?
   end
 
   def install
     bin.install "sq"
+  end
+
+  def caveats; <<~EOS
+    This is a preview release of sq. Use with caution.
+  EOS
   end
 
   test do
