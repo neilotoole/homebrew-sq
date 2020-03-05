@@ -2,12 +2,12 @@
 class Sq < Formula
   desc "sq is sed for structured data"
   homepage "http://sq.io"
-  version "0.5.16"
+  version "0.5.17"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/neilotoole/sq-preview/releases/download/v0.5.16/sq-0.5.16-macos.tar.gz"
-    sha256 "cc858279b7fc55d21308c66621b951c4d73dc632edf76336a36c177a4896a271"
+    url "https://github.com/neilotoole/sq-preview/releases/download/v0.5.17/sq-0.5.17-macos.tar.gz"
+    sha256 "62199201fc60315c43bfc767b044bbde584ea2962abcdcdcb198e2c7220cc8f9"
   elsif OS.linux?
   end
 
