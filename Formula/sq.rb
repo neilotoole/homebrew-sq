@@ -2,16 +2,16 @@
 class Sq < Formula
   desc "sq is sed for structured data"
   homepage "https://sq.io"
-  version "0.5.24"
+  version "0.5.25"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/neilotoole/sq-preview/releases/download/v0.5.24/sq-0.5.24-darwin-amd64.tar.gz"
-    sha256 "e0d4e9d0a754df47d16f57cfc977aa7895e84e93945281fd31ae22f9ec97d17b"
+    url "https://github.com/neilotoole/sq-preview/releases/download/v0.5.25/sq-0.5.25-macOS-amd64.tar.gz"
+    sha256 "93c42cb6fb2cfd0d0ab8a460c727a5079295d9eee542aba80c4c91e2c3a521df"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/neilotoole/sq-preview/releases/download/v0.5.24/sq-0.5.24-linux-amd64.tar.gz"
-      sha256 "51b04822a560e4fa340f309e5b48670ca51ed353cfd45ea6094c0ae63e9d1ed7"
+      url "https://github.com/neilotoole/sq-preview/releases/download/v0.5.25/sq-0.5.25-linux-amd64.tar.gz"
+      sha256 "3e1f337f47487a17290c1463235235bf4a7136380512f030d4d32458a11c3516"
     end
   end
 
