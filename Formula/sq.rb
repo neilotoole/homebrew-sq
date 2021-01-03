@@ -2,16 +2,16 @@
 class Sq < Formula
   desc "sq is a swiss army knife for data"
   homepage "https://sq.io"
-  version "0.14.6"
+  version "0.14.7"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/neilotoole/sq/releases/download/v0.14.6/sq-0.14.6-macOS-amd64.tar.gz"
-    sha256 "12a407cc79bb04f17782fda92ad33fb8d2f5103950c4fc4c494825fbc9ac1905"
+    url "https://github.com/neilotoole/sq/releases/download/v0.14.7/sq-macos-amd64.tar.gz"
+    sha256 "d1d337bded2d0b984d7a031dc68d36be87c30cb56a9c495d01703a3b96e86b2b"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/neilotoole/sq/releases/download/v0.14.6/sq-0.14.6-linux-amd64.tar.gz"
-    sha256 "07bf61fee42b29fb0032d9b2ec2ba6662c6f6810cf9c61dae1167dd7111b17fa"
+    url "https://github.com/neilotoole/sq/releases/download/v0.14.7/sq-linux-amd64.tar.gz"
+    sha256 "ce233d2bf47fba4b48c120a487a3d8391761bf0f1a30135df89445c26d190251"
   end
 
   def install
