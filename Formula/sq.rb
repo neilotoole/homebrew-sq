@@ -2,16 +2,16 @@
 class Sq < Formula
   desc "sq is a swiss army knife for data"
   homepage "https://sq.io"
-  version "0.14.9"
+  version "0.15.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/neilotoole/sq/releases/download/v0.14.9/sq-macos-amd64.tar.gz"
-    sha256 "860c30633dcf0947894d5aad371ee36b406f09556c170d832c6ff94c0ebbabbf"
+    url "https://github.com/neilotoole/sq/releases/download/v0.15.0/sq-macos-amd64.tar.gz"
+    sha256 "5b47b46c1bdbc6105dd825ddd5b6ae727d1227e83e3c168b0ec66c81477c50af"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/neilotoole/sq/releases/download/v0.14.9/sq-linux-amd64.tar.gz"
-    sha256 "0cbafaa6b3bacefdfb046c871b3ba0e1d29196d3b22ece0e28fcaf184850878f"
+    url "https://github.com/neilotoole/sq/releases/download/v0.15.0/sq-linux-amd64.tar.gz"
+    sha256 "803ae44cb6150de2ef5d534391881a9b877d4ba161cb715b50e12d78ab35c0f5"
   end
 
   def install
@@ -19,7 +19,7 @@ class Sq < Formula
   end
 
   def caveats; <<~EOS
-    This is a preview release of sq. Use with caution.
+    For shell completion installation instructions, execute: sq completion --help
   EOS
   end
 
