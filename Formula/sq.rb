@@ -9,10 +9,8 @@ class Sq < Formula
   bottle :unneeded
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/neilotoole/sq/releases/download/v0.15.6/sq-macos-amd64.tar.gz"
-      sha256 "525b0660c96906725d2c477b3fa2520798892e52da837a30a7fe701e11909fcf"
-    end
+    url "https://github.com/neilotoole/sq/releases/download/v0.15.6/sq-macos-amd64.tar.gz"
+    sha256 "525b0660c96906725d2c477b3fa2520798892e52da837a30a7fe701e11909fcf"
   end
 
   on_linux do
