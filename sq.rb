@@ -5,21 +5,21 @@
 class Sq < Formula
   desc "sq is a swiss army knife for data"
   homepage "https://github.com/neilotoole/sq"
-  version "0.18.1"
+  version "0.18.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/neilotoole/sq/releases/download/v0.18.1/sq-0.18.1-macos-arm64.tar.gz"
-      sha256 "90f90bbfd124dbcdb360df0f8c8174bf0f8e4cebcb7b1c5210313a734b4e5aea"
+      url "https://github.com/neilotoole/sq/releases/download/v0.18.2/sq-0.18.2-macos-arm64.tar.gz"
+      sha256 "81bdefd11a0c2664399bf750987d8acb74fabf1da7ab4c48f892b5cb7f64e21d"
 
       def install
         bin.install "sq"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/neilotoole/sq/releases/download/v0.18.1/sq-0.18.1-macos-amd64.tar.gz"
-      sha256 "0a02178d375a17c38cab137d59210b3350b34624c7be8f180e348ea8efa77380"
+      url "https://github.com/neilotoole/sq/releases/download/v0.18.2/sq-0.18.2-macos-amd64.tar.gz"
+      sha256 "8dda9d8b3f7573d032891e9f69cb7af9327c09f859bfae28b162c679060be652"
 
       def install
         bin.install "sq"
@@ -28,17 +28,17 @@ class Sq < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/neilotoole/sq/releases/download/v0.18.1/sq-0.18.1-linux-arm64.tar.gz"
-      sha256 "73ea23d34a774795ef9080cc2957cbee39ef2503a07de5531455862a54808fd0"
+    if Hardware::CPU.intel?
+      url "https://github.com/neilotoole/sq/releases/download/v0.18.2/sq-0.18.2-linux-amd64.tar.gz"
+      sha256 "afb5af2438bd38faf7901b35be6808df62ea21179d4337002a6268fcba8730fe"
 
       def install
         bin.install "sq"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/neilotoole/sq/releases/download/v0.18.1/sq-0.18.1-linux-amd64.tar.gz"
-      sha256 "93fb7a3d20034df6a5b7073b5aaa40f41f3ac9855750278d3dd3c6b5f04e9657"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/neilotoole/sq/releases/download/v0.18.2/sq-0.18.2-linux-arm64.tar.gz"
+      sha256 "a463517fa2a543330313324dd0037fdb783655644679d8286bf742c2d427b796"
 
       def install
         bin.install "sq"
