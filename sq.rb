@@ -5,55 +5,59 @@
 class Sq < Formula
   desc "sq: swiss-army knife for data"
   homepage "https://github.com/neilotoole/sq"
-  version "0.19.2"
+  version "0.20.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/neilotoole/sq/releases/download/v0.19.2/sq-0.19.2-macos-arm64.tar.gz"
-      sha256 "a88ad04cf5e5d1e7652760d6ce19f6442acf9e2bef503c174d7af237dacee7d8"
+      url "https://github.com/neilotoole/sq/releases/download/v0.20.0/sq-0.20.0-macos-arm64.tar.gz"
+      sha256 "3804a2cbb7789df4d0008af45dea59969a932b242ec7f9e18c71deeb4132d4b5"
 
       def install
         bin.install "sq"
         bash_completion.install "completions/sq.bash" => "sq"
         zsh_completion.install "completions/sq.zsh" => "_sq"
         fish_completion.install "completions/sq.fish"
+        man1.install "manpages/sq.1.gz"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/neilotoole/sq/releases/download/v0.19.2/sq-0.19.2-macos-amd64.tar.gz"
-      sha256 "27fb5e1f3ee4bf5135e6b05dba885a0da52a50aa57de2a211054e4c0f1acde23"
+      url "https://github.com/neilotoole/sq/releases/download/v0.20.0/sq-0.20.0-macos-amd64.tar.gz"
+      sha256 "5674316e5a8efd4430a30679cf5129e5c2e9966e30d294ba0901266ce8c9e212"
 
       def install
         bin.install "sq"
         bash_completion.install "completions/sq.bash" => "sq"
         zsh_completion.install "completions/sq.zsh" => "_sq"
         fish_completion.install "completions/sq.fish"
+        man1.install "manpages/sq.1.gz"
       end
     end
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/neilotoole/sq/releases/download/v0.19.2/sq-0.19.2-linux-amd64.tar.gz"
-      sha256 "5f683dc66147d22697194687e3a5e46c74c880d12f761d48d1b14a6a5ee87e90"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/neilotoole/sq/releases/download/v0.20.0/sq-0.20.0-linux-arm64.tar.gz"
+      sha256 "0769b928a202cf0c7174b6e0fb4f086375600bba333e8bbc2ec45a8b8d43464d"
 
       def install
         bin.install "sq"
         bash_completion.install "completions/sq.bash" => "sq"
         zsh_completion.install "completions/sq.zsh" => "_sq"
         fish_completion.install "completions/sq.fish"
+        man1.install "manpages/sq.1.gz"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/neilotoole/sq/releases/download/v0.19.2/sq-0.19.2-linux-arm64.tar.gz"
-      sha256 "4f6ad940627432c9c8cee7547aa07580c0aaf5493fa8bfe0af383d5c1b502682"
+    if Hardware::CPU.intel?
+      url "https://github.com/neilotoole/sq/releases/download/v0.20.0/sq-0.20.0-linux-amd64.tar.gz"
+      sha256 "38263083d09dc5c0f5dd1d3cf24daac90fa7b013c865be7c9192fe7eca439486"
 
       def install
         bin.install "sq"
         bash_completion.install "completions/sq.bash" => "sq"
         zsh_completion.install "completions/sq.zsh" => "_sq"
         fish_completion.install "completions/sq.fish"
+        man1.install "manpages/sq.1.gz"
       end
     end
   end
