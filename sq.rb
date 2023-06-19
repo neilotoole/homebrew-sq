@@ -5,13 +5,13 @@
 class Sq < Formula
   desc "sq: swiss-army knife for data"
   homepage "https://github.com/neilotoole/sq"
-  version "0.38.0"
+  version "0.38.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/neilotoole/sq/releases/download/v0.38.0/sq-0.38.0-macos-amd64.tar.gz"
-      sha256 "a52f3df4ef16fbf764ebbd5a37f8c82edf3039b425fd9dd00ce12041edb32ba1"
+      url "https://github.com/neilotoole/sq/releases/download/v0.38.1/sq-0.38.1-macos-amd64.tar.gz"
+      sha256 "76b66d564433791aa7728c0d9a9781bb1af0253d2b1ad122cb13da5604384a95"
 
       def install
         bin.install "sq"
@@ -22,8 +22,8 @@ class Sq < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/neilotoole/sq/releases/download/v0.38.0/sq-0.38.0-macos-arm64.tar.gz"
-      sha256 "e35c6b5a3cda34753b85635af7f79d29ccafb0d1c9857fdfaf89dd16e56bbecf"
+      url "https://github.com/neilotoole/sq/releases/download/v0.38.1/sq-0.38.1-macos-arm64.tar.gz"
+      sha256 "e5d7bd1b86d40af5b6b4668d356c090781a9c9018bc36d772a9a94f6b754bac8"
 
       def install
         bin.install "sq"
@@ -37,8 +37,8 @@ class Sq < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/neilotoole/sq/releases/download/v0.38.0/sq-0.38.0-linux-arm64.tar.gz"
-      sha256 "1ad87eb1b3d787604259ec6272ea91df4c95c9790087d317617f091a1ed6f83a"
+      url "https://github.com/neilotoole/sq/releases/download/v0.38.1/sq-0.38.1-linux-arm64.tar.gz"
+      sha256 "1931fda339c59bc5c2e67662cc4487c5a233033e39cc734fc335f71faa5c2393"
 
       def install
         bin.install "sq"
@@ -49,8 +49,8 @@ class Sq < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/neilotoole/sq/releases/download/v0.38.0/sq-0.38.0-linux-amd64.tar.gz"
-      sha256 "b31aa1b426b28208bb89e4b3960a038bf6f1fadb1f8cb3569298688d6c08135b"
+      url "https://github.com/neilotoole/sq/releases/download/v0.38.1/sq-0.38.1-linux-amd64.tar.gz"
+      sha256 "59646422f47f79d15f35f946c98e1dc1bb756a3e2999c5377637d4fa0317eff7"
 
       def install
         bin.install "sq"
