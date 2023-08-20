@@ -5,13 +5,13 @@
 class Sq < Formula
   desc "sq data wrangler"
   homepage "https://github.com/neilotoole/sq"
-  version "0.40.0"
+  version "0.41.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/neilotoole/sq/releases/download/v0.40.0/sq-0.40.0-macos-amd64.tar.gz"
-      sha256 "fd654678b0165ff4224db66fba07dfc732eeef59d5550320e67cee359e6a1ec9"
+      url "https://github.com/neilotoole/sq/releases/download/v0.41.0/sq-0.41.0-macos-amd64.tar.gz"
+      sha256 "ed8c1ecdc6705a617ac9ea196de276f6d8b37dbc070466d648407761ef358d7e"
 
       def install
         bin.install "sq"
@@ -22,8 +22,8 @@ class Sq < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/neilotoole/sq/releases/download/v0.40.0/sq-0.40.0-macos-arm64.tar.gz"
-      sha256 "597ac986d9b1301f6b825f820357a837e9192348cf2d2432ee01e60a806ac8f7"
+      url "https://github.com/neilotoole/sq/releases/download/v0.41.0/sq-0.41.0-macos-arm64.tar.gz"
+      sha256 "bae6c6ead92440059da8d43e38ac81263eb681b1b5190ce3dca77c99ac583c73"
 
       def install
         bin.install "sq"
@@ -36,9 +36,9 @@ class Sq < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/neilotoole/sq/releases/download/v0.40.0/sq-0.40.0-linux-arm64.tar.gz"
-      sha256 "7e36366c00f84fae8a3e8dc19659292f01af59e5ce8429c2e12a5c310deb45e9"
+    if Hardware::CPU.intel?
+      url "https://github.com/neilotoole/sq/releases/download/v0.41.0/sq-0.41.0-amd64-amd64.tar.gz"
+      sha256 "c086c4c6adcc41aa556ea7ba03fbb1584bb0842e4d417fc5c622736dc496c762"
 
       def install
         bin.install "sq"
@@ -48,9 +48,9 @@ class Sq < Formula
         man1.install "manpages/sq.1.gz"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/neilotoole/sq/releases/download/v0.40.0/sq-0.40.0-linux-amd64.tar.gz"
-      sha256 "08098b182d08f561d2229691f7b8fd00983e6442cf9b35e97035364387da95a4"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/neilotoole/sq/releases/download/v0.41.0/sq-0.41.0-arm64-arm64.tar.gz"
+      sha256 "725a8c656832fd20f36c6e32023c4060bc444e29ab51dc1c36714ea426e8fbb1"
 
       def install
         bin.install "sq"
