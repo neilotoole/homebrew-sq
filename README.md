@@ -15,8 +15,7 @@
 > brew install sq
 > ```
 >
-> This tap remains available for users who need it, but will receive less
-> frequent updates than the homebrew-core formula.
+> This tap remains available for the foreseeable future. But it is recommended to move to the `homebrew-core` formula.
 
 ---
 
