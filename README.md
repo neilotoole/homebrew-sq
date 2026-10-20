@@ -1,6 +1,6 @@
 # sq Homebrew Tap (Retired)
 
-This tap is retired. `sq` is a [homebrew-core](https://formulae.brew.sh/formula/sq) formula:
+This tap (`neilotoole/sq`) is retired. `sq` is now a [homebrew-core](https://formulae.brew.sh/formula/sq) formula:
 
 ```shell
 brew install sq
