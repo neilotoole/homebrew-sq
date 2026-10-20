@@ -1,32 +1,28 @@
-# sq Homebrew Tap (Legacy)
+# sq Homebrew Tap (Retired)
 
-> **Note:** `sq` is now available in [homebrew-core](https://formulae.brew.sh/formula/sq).
-> New users should install via:
->
-> ```shell
-> brew install sq
-> ```
->
-> Existing users of this tap can migrate:
->
-> ```shell
-> brew untap neilotoole/sq
-> brew uninstall sq
-> brew install sq
-> ```
->
-> This tap remains available for the foreseeable future. But it is recommended to move to the `homebrew-core` formula.
+This tap is retired. `sq` is a [homebrew-core](https://formulae.brew.sh/formula/sq) formula:
 
----
+```shell
+brew install sq
+```
 
-## Legacy Installation (this tap)
+## Existing users
 
-If you specifically need to install from this tap:
+If you installed `sq` from this tap (`brew install neilotoole/sq/sq`), you don't need to do
+anything. This tap's [`tap_migrations.json`](tap_migrations.json) points `sq` at
+`homebrew/core`, so your next `brew update` switches the install to the core formula, and
+`brew upgrade` takes it from there.
 
-`brew install neilotoole/sq/sq`
+Once that's done, you can remove the tap:
 
-Or `brew tap neilotoole/sq` and then `brew install sq`.
+```shell
+brew untap neilotoole/sq
+```
 
-## Documentation
+## Intel Macs
 
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+Homebrew no longer builds bottles for Intel Macs, so on an Intel Mac, `brew install sq` builds
+from source. To skip the build, download the `macos-amd64` binary from
+[GitHub releases](https://github.com/neilotoole/sq/releases).
+
+See [neilotoole/sq#1285](https://github.com/neilotoole/sq/issues/1285) for background.
